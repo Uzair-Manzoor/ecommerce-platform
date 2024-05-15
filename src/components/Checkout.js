@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 
 const Checkout = () => {
   const [step, setStep] = useState(1);
-  const [shippingInfo, setShippingInfo] = useState({});
-  const [paymentInfo, setPaymentInfo] = useState({});
-
   const handleNextStep = () => setStep(step + 1);
   const handlePreviousStep = () => setStep(step - 1);
 
